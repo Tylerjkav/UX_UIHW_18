@@ -1,0 +1,144 @@
+.inlineBlock {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 5px;
+  margin: 50px 10px 50px 100px;
+}
+
+.inlineBlock2 {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 5px;
+  margin: 50px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13pt;
+}
+
+button {
+  background-image: linear-gradient(85deg, rgba(15,48,87,1),rgba(0,88,122,1));
+  border: none;
+  color: white;
+  padding: 9px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+} 
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 13pt;
+  color: #3B3939;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 10pt;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  width: 50%;
+  font-size: 25px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width: 50%;
+  font-size: 18px;
+  margin: 75px auto;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.rule {
+  width: 60%;
+  margin: 35px auto;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 25px;
+}
+
+.inlineBlockcont {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 10px 5px 2px;
+}
+
+.card {
+  display: inline-block;
+  background-color: white;
+  width: 30%;
+  margin-top: 5px;
+  padding: 1px 15px 15px 0px;
+  vertical-align: top;  
+  text-align: top;
+}
+
+.centerContent {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cardContent {
+  display: inline-block;
+  background-color: white;
+  width: 30%;
+  margin-top: 0px;
+  padding: 1px 15px 15px 16px;
+  vertical-align: top;  
+  text-align: center ;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  /* width: 50%; */
+  font-size: 15px;
+  /* margin: 50px auto; */
+  text-align: left;
+  color: #EE1F37;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  /* width: 50%; */
+  font-size: 25px;
+  /* margin: 50px auto; */
+  text-align: left;
+}
+
+footer {
+  background-color: #E1E1E1;
+  height: 340px;
+  vertical-align: middle;
+}
