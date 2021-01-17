@@ -142,3 +142,44 @@ footer {
   height: 340px;
   vertical-align: middle;
 }
+.flexContainer {
+  display: flex;
+  text-align: center;
+
+}
+.flexItem {
+  margin: 10px; 
+  width: 33%;
+
+}
+.leftJustified {
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 10%;
+  row-gap: 5%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "ftc wild"
+    "tourist empty";
+}
+
+.ftc { 
+  grid-area: ftc; 
+}
+
+.wild { 
+  grid-area: wild; 
+}
+
+.tourist { 
+  grid-area: tourist; 
+}
+
+.empty { 
+  grid-area: empty; 
+}
+
