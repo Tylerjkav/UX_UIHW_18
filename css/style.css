@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px gray;
+  width: 100%;
+  top: 0;
+  box-shadow: 2px 0px 10px #e1e1e1;
+}
+
 .inlineBlock {
   display: inline-block;
   vertical-align: bottom;
@@ -13,6 +27,49 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 13pt;
+}
+
+.contentTop {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+.contentArrow {
+  width: 60%;
+  padding: 25px;
+  text-align: center;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.gridContainerSocial {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+  padding: 25px;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  justify-content: center;
+  align-content: space-around;
+  grid-template-areas:
+    "resume email linkedin";
+}
+
+.resume { 
+  grid-area: resume;
+  display: flex;  
+}
+
+.email { 
+  grid-area: email; 
+  display: flex; 
+}
+
+.linkedin { 
+  grid-area: linkedin; 
+  display: flex; 
 }
 
 button {
@@ -131,9 +188,7 @@ h5 {
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  /* width: 50%; */
   font-size: 25px;
-  /* margin: 50px auto; */
   text-align: left;
 }
 
@@ -142,16 +197,18 @@ footer {
   height: 340px;
   vertical-align: middle;
 }
+
 .flexContainer {
   display: flex;
   text-align: center;
 
 }
+
 .flexItem {
   margin: 10px; 
   width: 33%;
-
 }
+
 .leftJustified {
   text-align: left;
 }
@@ -183,3 +240,73 @@ footer {
   grid-area: empty; 
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    gap: 1% 0px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "ftc"
+    "wild"
+    "tourist"
+    ;
+  }
+  .flexContainer {
+    display: list-item;
+    list-style-type: none;  
+    width: 100%;
+    margin: 1px;
+  }
+  .content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .contentTop {
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 150px;
+  } 
+
+  .inlineBlock {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+    }
+
+  .flexItem {
+    margin: auto; 
+    width: 75%;
+    text-align: center;    
+  }
+
+  .rule {
+    width: 95%;
+    margin: 5px auto;
+  }
+
+  .gridContainerSocial {
+    gap: 10% 10%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "resume"
+    "email"
+    "linkedin"
+    ;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .gridContainerSocial {
+    gap: 10% 10%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "resume"
+    "email"
+    "linkedin"
+    ;
+  }
+}
